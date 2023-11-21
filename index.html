@@ -9,9 +9,12 @@
 <body>
     <head>
         <nav class="container">
-            <div id="logo-div"></div>
+            <div id="logo-div">
+                <h2 class="chess"><span class="white-letter">*</span><span class="normal-letter">Q</span><span class="white-letter">U</span><span class="normal-letter">O</span><span class="white-letter">I</span><span class="normal-letter">S</span><span class="white-letter">*</span></h2>
+                <h2 class="chess"><span class="normal-letter">R</span><span class="white-letter">E</span><span class="normal-letter">C</span><span class="white-letter">O</span><span class="normal-letter">R</span><span class="white-letter">D</span><span class="normal-letter">S</span></h2>
+            </div>
             <ul id="nav-links">
-                <li><a href="index.html">Main</a></li>
+                <li id="current-page"><a href="index.html">Main</a></li>
                 <li><a href="#index-about">About</a></li>
                 <li><a href="services.html">Services</a></li>
                 <li><a href="artists.html">Artists</a></li>
@@ -20,20 +23,22 @@
             </ul>
         </nav>
         <div class="hero container" id="index-hero">
-            <h1>Q<span class="white-letter">U</span>O<span class="white-letter">I</span>S<span class="white-letter">R</span>E<span class="white-letter">C</span>O<span class="white-letter">R</span>D<span class="white-letter">S</span></h1>
+            <h1 class="chess"><span class="white-letter">*</span><span class="normal-letter">Q</span><span class="white-letter">U</span><span class="normal-letter">O</span><span class="white-letter">I</span><span class="normal-letter">S</span><span class="white-letter">*</span></h1>
+            <h1 class="chess" id="index-hero-title"><span class="normal-letter">R</span><span class="white-letter">E</span><span class="normal-letter">C</span><span class="white-letter">O</span><span class="normal-letter">R</span><span class="white-letter">D</span><span class="normal-letter">S</span></h1>
             <h2>Putting the "QUOIS" in QUALITY MUSIC</h2>
-            <a href="#index-contact">            <button>Looking for a label?</button></a>
+            <a href="#index-contact"><button class="hero-button">Looking for a label?</button></a>
         </div>
     </head>
     <main>
         <div class="container" id="index-about">
             <h2>About Quois Records</h2>
-            <h4>O Fortuna velut luna statu variabilis, semper crescis aut decrescis; vita detestabilis nunc obdurat et tunc curat ludo mentis aciem, egestatem, potestatem dissolvit ut glaciem.</h4>
-            <a href="#index-contact"><button>Get in touch</button></a>
+            <h4>O Fortuna velut luna statu variabilis, semper crescis aut decrescis; vita detestabilis nunc obdurat et tunc curat ludo mentis aciem, egestatem, potestatem dissolvit ut glaciem. Sors immanis et inanis, rota tu volubilis, status malus, vana salus semper dissolubilis, obumbrata et velata michi quoque niteris; nunc per ludum dorsum nudum fero tui sceleris. Sors salutis et virtutis michi nunc contraria, est affectus et defectus semper in angaria. Hac in hora sine mora corde pulsum tangite; quod per sortem sternit fortem, mecum omnes plangite!</h4>
+            <h4>O Fortune, like the moon you are changeable, ever waxing ever waning; hateful life first oppresses and then soothes playing with mental clarity; poverty and power it melts them like ice. Fate – monstrous and empty, you whirling wheel, you are malevolent, devoid of security and ever fading to nothing, shadowed and veiled you plague me too; now through the game I bring my bare back to your villainy. Fate, in health and virtue is against me, driven on and weighted down, always enslaved. So at this hour without delay pluck the vibrating strings; since Fate strikes down the strong, everyone weep with me!</h4>
+            <a href="#index-contact"><button class="section-button" id="about-button">Get in touch</button></a>
         </div>
         <div class="container" id="index-services">
             <h2>Our Services</h2>
-            <div id="index-service-list">
+            <div class="line-list">
                 <div class="service-box">
                     <img src="" alt="">
                     <h3>Marketing</h3>
@@ -56,24 +61,56 @@
                 </div>
                 <div class="service-box">
                     <img src="" alt="">
-                    <h3>Rights Management</h3>
+                    <h3>Rights<br>Management</h3>
                 </div>
                 <div class="service-box">
                     <img src="" alt="">
                     <h3>Analytics</h3>
                 </div>
             </div>
-            <a href="services.html"><button>Find out more</button></a>
+            <a href="services.html"><button class="section-button" id="service-button">Find out more</button></a>
         </div>
         <div class="container" id="index-artists">
             <a href="artists.html"><h2>Quois Records Artists</h2></a>
-            <div id="index-artist-list">
-                <div class="artist-box"></div>
-                <div class="artist-box"></div>
-                <div class="artist-box"></div>
+            <div class="line-list">
+                <div class="artist-box">
+                    <div class="artist-chess chess-child">
+                        <div class="chess-box"></div>
+                        <div class="chess-box cb-black"></div>
+                        <div class="chess-box cb-black"></div>
+                        <div class="chess-box"></div>
+                    </div>
+                </div>
+                <div class="artist-box">
+                    <div class="artist-chess chess-child">
+                        <div class="chess-box cb-black"></div>
+                        <div class="chess-box"></div>
+                        <div class="chess-box"></div>
+                        <div class="chess-box cb-black"></div>
+                    </div>
+                </div>
+                <div class="artist-box">
+                    <div class="artist-chess chess-child">
+                        <div class="chess-box"></div>
+                        <div class="chess-box cb-black"></div>
+                        <div class="chess-box cb-black"></div>
+                        <div class="chess-box"></div>
+                    </div>
+                </div>
                 <a href="artists.html">
-                    <div class="artist-box">
-                        <h3>See our<br>full list</h3>
+                    <div class="artist-chess" id="artist-link-box">
+                        <div class="chess-box cb-black">
+                            <h3>See</h3>
+                        </div>
+                        <div class="chess-box">
+                            <h3>Our</h3>
+                        </div>
+                        <div class="chess-box">
+                            <h3>Full</h3>
+                        </div>
+                        <div class="chess-box cb-black">
+                            <h3>List</h3>
+                        </div>
                     </div>
                 </a>
             </div>
@@ -83,13 +120,13 @@
             <h4>We're here for the next generation of artists. Contact us below to take the next step to success.</h4>
         </div>
         <div class="container" id="index-careers">
-            <a href="careers.html"><h2>Work with us</h2></a>
+            <a href="careers.html"><h2>Work With Us</h2></a>
             <h4>If you're not a  musician but are looking for a career in the music industry, we have good news: we're hiring.</h4>
-            <a href="careers.html"><button>Check out Quois Records careers here</button></a>
+            <a href="careers.html"><button class="section-button" id="careers-button">Check out Quois Records careers here</button></a>
         </div>
     </main>
     <footer>
-        <div class="container">
+        <div class="container" id="footer-container">
             <h4>What can I say? You've reached the end.</h4>
         </div>
     </footer>
