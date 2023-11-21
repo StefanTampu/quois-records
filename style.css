@@ -360,3 +360,22 @@ main.container {
     padding: 8px 32px;
     background-color: hsl(302, 59%, 95%);
 }
+
+/*Artists.html*/
+
+#artist-main {
+    width: 100%;
+}
+
+#artist-list {
+    width: 100%;
+    display: grid;
+    grid-template: 340px / repeat(4, 300px);
+    justify-content: space-between;
+    grid-auto-rows: 340px;
+    grid-auto-columns: repeat(4, 300px);
+}
+
+#artist-page-button:hover {
+    box-shadow: inset 310px 0 0 0 darkorchid;
+}
