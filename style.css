@@ -1,44 +1,318 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    display: flex;
+    flex-direction: column;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
 .container {
-    width: 100%;
+    max-width: 2560px;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-bottom: 8px double black;
+    margin-bottom: 16px;
+    padding-bottom: 8px;
+    text-align: justify;
+}
+
+h1 {
+    font-size: 100px;
+}
+
+h2 {
+    font-size: 48px;
+    margin-bottom: 8px;
+}
+
+h3 {
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+h4 {
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+nav {
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+.chess {
+    font-family: monospace;
+    margin: 0;
+    background-color: white;
+    color: black;
+}
+
+.normal-letter {
+    background-color: white;
+    color: black;
+}
+
+.white-letter {
+    background-color: black;
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+    font-size: 24px;
+}
+
+nav ul li {
+    padding: 4px 12px;
+    border-radius: 6px;
+    transition: 700ms;
+}
+
+nav ul li:hover {
+    background-color: darkorchid;
+    color: white;
+}
+
+nav ul li:active {
+    background-color: black;
+    color: white;
+}
+
+#current-page {
+    background-color: black;
+    color: white;
+}
+
+#current-page:hover {
+    background-color: orchid;
+}
+
+#current-page:active {
+    background-color: white;
+    color: black;
+}
+
+.hero {
+    width: 100%;
+}
+
+#index-hero {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 16px;
+}
+
+#index-hero-title {
+    margin-bottom: 16px;
+}
+
+button {
+    outline: none;
+    border: none;
+    background-color: black;
+    color: white;
+    box-shadow: inset 0 0 0 0 darkorchid;
+    transition: box-shadow 2s cubic-bezier(0,1.2,0.8,1);
+    cursor: pointer;
+    font-family: monospace;
+}
+
+button:hover {
+    text-shadow: white 0 0 5px;
+}
+
+.hero-button {
+    font-size: 32px;
+}
+
+.hero-button:hover {
+    box-shadow: inset 300px 0 0 0 darkorchid;
+}
+
+.section-button {
+    font-size: 24px;
+}
+
+#about-button:hover {
+    box-shadow: inset 150px 0 0 0 darkorchid;
+}
+
+.line-list {
+    display: flex;
+    gap: 48px;
+    margin-bottom: 8px;
+}
+
+.service-box {
+    border-left: 8px outset black;
+    border-right: 8px outset black;
+    text-align: center;
+    font-family: monospace;
+}
+
+#service-button:hover {
+    box-shadow: inset 170px 0 0 0 darkorchid;
+}
+
+.artist-box {
+    height: 300px;
+    width: 300px;
+    outline: 8px outset black;
+    position: relative;
+    transition: 2s;
+}
+
+.artist-chess {
+    height: 300px;
+    width: 300px;
+    outline: 8px outset black;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.chess-box {
+    height: 150px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: monospace;
+    font-weight: 900;
+    transition: 500ms;
+}
+
+.chess-child {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: 500ms;
+}
+
+.artist-box:hover .chess-child {
+    opacity: 1;
+}
+
+.cb-black {
+    background-color: black;
+    color: white;
+}
+
+#artist-link-box:hover div {
+    background-color: black;
+    color: white;
+}
+
+#artist-link-box:hover .cb-black {
+    background-color: white;
+    color: black;
+}
+
+#careers-button:hover {
+    box-shadow: inset 490px 0 0 0 darkorchid;
+}
+
+#index-careers {
+    border-bottom: none;
+}
+
+footer{
+    background-color: black;
+    color: white;
 }
 
 @media (max-width: 2560px){
-    .container {
-        max-width: 2560px;
-    }
-}
-
-@media (max-width: 1440px){
     .container {
         max-width: 1440px;
     }
 }
 
-@media (max-width: 1024px){
+@media (max-width: 1440px){
     .container {
         max-width: 1024px;
     }
 }
 
-@media (max-width: 768px){
+@media (max-width: 1024px){
     .container {
         max-width: 768px;
     }
 }
 
-@media (max-width: 425px){
+@media (max-width: 768px){
     .container {
         max-width: 425px;
     }
 }
 
-@media (max-width: 375px){
+@media (max-width: 425px){
     .container {
         max-width: 375px;
+    }
+}
+
+@media (max-width: 375px){
+    .container {
+        width: 100%;
     }
 }
 
