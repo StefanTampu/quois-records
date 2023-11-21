@@ -63,6 +63,7 @@ table {
 
 h1 {
     font-size: 100px;
+    margin-bottom: 8px;
 }
 
 h2 {
@@ -320,4 +321,42 @@ footer{
     .container {
         max-width: 320px;
     }
+}
+
+main.container {
+    border: none;
+}
+
+#services-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+#services-container .service-box {
+    border: none;
+}
+
+.service-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: justify;
+}
+
+.service-name {
+    padding: 8px 32px;
+    display: flex;
+    justify-content: space-between;
+    background-color: darkorchid;
+    color: white;
+    border-bottom: 2px solid orchid;
+    box-shadow: 0 2px 2px 0 orchid;
+}
+
+.service-description {
+    padding: 8px 32px;
+    background-color: hsl(302, 59%, 95%);
 }
