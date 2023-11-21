@@ -353,15 +353,16 @@ main.container {
     padding: 8px 32px;
     display: flex;
     justify-content: space-between;
-    background-color: darkorchid;
+    background-color: black;
     color: white;
-    border-bottom: 2px solid orchid;
-    box-shadow: 0 2px 2px 0 orchid;
+    box-shadow: 0 2px 8px 0 orchid;
+    z-index: 2;
 }
 
 .service-description {
     padding: 8px 32px;
     background-color: hsl(302, 59%, 95%);
+    z-index: 1;
 }
 
 /*Artists.html*/
