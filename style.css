@@ -188,7 +188,7 @@ button:hover {
 }
 
 .hero-button:hover {
-    box-shadow: inset 300px 0 0 0 darkorchid;
+    box-shadow: inset 370px 0 0 0 darkorchid;
 }
 
 .section-button {
@@ -196,7 +196,7 @@ button:hover {
 }
 
 #about-button:hover {
-    box-shadow: inset 150px 0 0 0 darkorchid;
+    box-shadow: inset 170px 0 0 0 darkorchid;
 }
 
 .line-list {
@@ -213,7 +213,7 @@ button:hover {
 }
 
 #service-button:hover {
-    box-shadow: inset 170px 0 0 0 darkorchid;
+    box-shadow: inset 190px 0 0 0 darkorchid;
 }
 
 .artist-box {
@@ -415,4 +415,10 @@ main.container {
     text-shadow: 0 0 16px white;
     border: 8px outset hsl(302, 59%, 75%);
     z-index: 2;
+}
+
+/**Career Pages**/
+
+.career-application {
+    border-bottom: none;
 }
