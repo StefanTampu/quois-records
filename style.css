@@ -222,9 +222,9 @@ button:hover {
     outline: 8px outset black;
     position: relative;
     transition: 2s;
-}
-
-.artist-box:hover {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .artist-chess {
@@ -400,6 +400,45 @@ text-align: justify;
     background-image: url(Resources/Bacchylides.jpg);
 }
 
+#a2 {
+    background-image: url(Resources/Luzhu.jpg);
+}
+
+#a3 {
+    background-image: url(Resources/Sha-Amun-en-su.jpg);
+}
+
+#a4 {
+    background-image: url(Resources/Cai-Yan.jpg);
+}
+
+#a5 {
+    background-image: url(Resources/Bernart.jpg);
+}
+
+#a6 {
+    background-image: url(Resources/Machaut.jpg);
+}
+
+#a7 {
+    background-image: url(Resources/Vivaldi.jpg);
+}
+
+#a8 {
+    background-image: url(Resources/Mozart.jpg);
+}
+
+#a9 {
+    background-image: url(Resources/Maria-Tanase.jpg);
+}
+
+#a10 {
+    background-image: url(Resources/Miles-Davis.jpg);
+}
+
+#a11 {
+    background-image: url(Resources/Renato-Carosone.jpg);
+}
 /*Careers.html*/
 
 #jobs-list {
