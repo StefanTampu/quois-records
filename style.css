@@ -298,6 +298,7 @@ button:hover {
 footer{
     background-color: black;
     color: white;
+    padding-top: 16px;
 }
 
 @media (max-width: 2560px){
