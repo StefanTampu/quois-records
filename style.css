@@ -273,6 +273,10 @@ button:hover {
     color: white;
 }
 
+.chess-box a {
+    margin: 16px;
+}
+
 #artist-link-box:hover div {
     background-color: black;
     color: white;
@@ -358,7 +362,6 @@ main.container {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-text-align: justify;
 }
 
 .service-name {
@@ -375,6 +378,7 @@ text-align: justify;
     padding: 8px 32px;
     background-color: hsl(302, 59%, 95%);
     z-index: 1;
+    text-align: justify;
 }
 
 /*Artists.html*/
