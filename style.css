@@ -381,7 +381,7 @@ main.container {
 
 .service-name:active,
 .service-name:hover {
-    background-color: darkorchid;
+    background-color: hsl(0, 0%, 20%);
 }
 
 .sn-white {
@@ -391,7 +391,7 @@ main.container {
 
 .sn-white:active,
 .sn-white:hover {
-    background-color: orchid;
+    background-color: hsl(0, 0%, 95%);
 }
 
 .plus {
