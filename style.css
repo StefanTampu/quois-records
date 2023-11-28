@@ -130,8 +130,7 @@ nav ul li {
 }
 
 nav ul li:hover {
-    background-color: darkorchid;
-    color: white;
+    background-color: orchid;
 }
 
 nav ul li:active {
@@ -145,7 +144,7 @@ nav ul li:active {
 }
 
 #current-page:hover {
-    background-color: orchid;
+    background-color: darkorchid;
 }
 
 #current-page:active {
