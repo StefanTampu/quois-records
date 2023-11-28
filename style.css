@@ -351,6 +351,8 @@ main.container {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: start;
+    width: 100%;
     gap: 16px;
     margin-bottom: 16px;
 }
@@ -360,6 +362,7 @@ main.container {
 }
 
 .service-box {
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -372,14 +375,44 @@ main.container {
     background-color: black;
     color: white;
     box-shadow: 0 2px 8px 0 orchid;
-    z-index: 2;
+    cursor: pointer;
+    transition: 500ms;
+}
+
+.service-name:active,
+.service-name:hover {
+    background-color: darkorchid;
+}
+
+.sn-white {
+    background-color: white;
+    color: black;
+}
+
+.sn-white:active,
+.sn-white:hover {
+    background-color: orchid;
+}
+
+.plus {
+    transition: 1s;
+}
+
+.exit {
+    transform: rotate(225deg);
 }
 
 .service-description {
-    padding: 8px 32px;
     background-color: hsl(302, 59%, 95%);
-    z-index: 1;
     text-align: justify;
+    padding: 0 32px;
+    max-height: 0;
+    overflow: hidden;
+    transition: 1s;
+}
+
+.service-description-expand {
+    max-height: 100px;
 }
 
 /*Artists.html*/
