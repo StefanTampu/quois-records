@@ -23,10 +23,10 @@
             </ul>
         </nav>
     </head>
-    <main class="container">
-        <h1>Quois Records' Services</h1>
-        <h4>Click below to find out more about how we will help you succeed.</h4>
-        <div id="services-container">
+    <main>
+        <div class="container" id="services-container">
+            <h1>Quois Records' Services</h1>
+            <h4>Click below to find out more about how we will help you succeed.</h4>
             <div class="service-box">
                 <div class="service-name">
                     <h2>Marketing</h2>
@@ -91,7 +91,21 @@
                 </div>
             </div>
         </div>
-        <h3>Contact us below to start.</h3>
+        <div class="container last-container" id="services-contact">
+            <h3>Contact us below to start.</h3>
+            <form action="" target="_parent" method="post" name="services-contact-form" novalidate>
+                <label for="f-name">First name:</label><br>
+                <input type="text" id="f-name" name="f-name" size="30" required><br>
+                <label for="l-name">Last name:</label><br>
+                <input type="text" id="l-name" name="l-name" size="30" required><br>
+                <label for="email-address">Email address:</label><br>
+                <input type="text" id="email-address" name="email-address" size="30" required><br>
+                <label for="email-subject">Subject:</label><br>
+                <input type="text" id="email-subject" name="email-subject" size="30" required><br>
+                <textarea name="message" id="services-message" cols="100" rows="10" placeholder="Please write your message here." required></textarea><br>
+                <input type="submit">
+            </form>
+        </div>
     </main>
     <footer>
         <div class="container">

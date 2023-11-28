@@ -32,6 +32,18 @@
         <div class="career-application container">
             <h2>Apply today!</h2>
             <h4>Please send us an email along with your CV through the form below if you are interested in applying for this position, or contact us if you have any questions.</h4>
+            <form action="" target="_parent" method="post" name="j2-contact-form" novalidate>
+                <label for="f-name">First name:</label><br>
+                <input type="text" id="f-name" name="f-name" size="30" required><br>
+                <label for="l-name">Last name:</label><br>
+                <input type="text" id="l-name" name="l-name" size="30" required><br>
+                <label for="email-address">Email address:</label><br>
+                <input type="text" id="email-address" name="email-address" size="30" required><br>
+                <label for="email-subject">Subject:</label><br>
+                <input type="text" id="email-subject" name="email-subject" size="30" required><br>
+                <textarea name="message" id="j2-message" cols="100" rows="10" placeholder="Please write your message here." required></textarea><br>
+                <input type="submit">
+            </form>
         </div>
     </main>
     <footer>
