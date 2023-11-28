@@ -286,6 +286,42 @@ button:hover {
     color: black;
 }
 
+form {
+    padding: 8px 32px;
+    background-color: black;
+    color: white;
+    border-radius: 16px;
+    border: 8px double white;
+    box-shadow: 2px 2px 2px 0 darkorchid;
+    font-family: monospace;
+}
+
+label {
+    font-size: 24px;
+}
+
+input, textarea {
+    font-family: monospace;
+    font-size: 24px;
+    margin: 2px 0 8px 0;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    padding: 4px;
+}
+
+input[type=submit] {
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 darkorchid;
+    transition: color 2s cubic-bezier(0,1.2,0.8,1), box-shadow 2s cubic-bezier(0,1.2,0.8,1);
+}
+
+input[type=submit]:hover {
+    color: white;
+    text-shadow: white 0 0 5px;
+    box-shadow: inset 90px 0 0 0 darkorchid;
+}
+
 #careers-button:hover {
     box-shadow: inset 490px 0 0 0 darkorchid;
 }
