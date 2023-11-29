@@ -316,9 +316,6 @@ input, textarea, input::file-selector-button, select {
     outline: none;
     border: none;
     padding: 4px;
-}
-
-textarea {
     max-width: 100%;
 }
 
@@ -380,18 +377,14 @@ footer{
     
     h2 {
         font-size: 48px;
-        margin-bottom: 8px;
     }
     
     h3 {
         font-size: 30px;
-        text-transform: uppercase;
     }
     
     h4 {
         font-size: 24px;
-        margin-bottom: 8px;
-        font-family: monospace;
     }
 
     nav{
@@ -457,6 +450,35 @@ footer{
 @media (max-width: 1024px){
     .container {
         max-width: 768px;
+    }
+
+    h1 {
+        font-size: 90px;
+    }
+    
+    h2 {
+        font-size: 40px;
+        margin-bottom: 8px;
+    }
+    
+    h3 {
+        font-size: 27px;
+        text-transform: uppercase;
+    }
+    
+    h4 {
+        font-size: 24px;
+        margin-bottom: 8px;
+        font-family: monospace;
+    }
+
+    nav ul {
+        font-size: 24px;
+        gap: 4px;
+    }
+
+    nav ul li {
+        padding: 4px 8px;
     }
 }
 
