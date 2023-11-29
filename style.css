@@ -516,7 +516,7 @@ footer{
         font-size: 64px;
     }
 
-    h2 {
+        h2 {
         font-size: 32px;
     }
     
@@ -713,7 +713,7 @@ main.container {
 }
 
 .service-description-expand {
-    max-height: 100px;
+    max-height: fit-content;
 }
 
 /*Artists.html*/
