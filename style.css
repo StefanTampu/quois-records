@@ -815,10 +815,11 @@ main.container {
 
 #jobs-list {
     width: 100%;
-    display: grid;
-    grid-template: 300px / repeat(5, 250px);
-    grid-auto-rows: 300px;
-    grid-auto-columns: repeat(5, 250px);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 32px;
 }
 
 .job-box {
@@ -834,14 +835,12 @@ main.container {
     color: white;
     border: 8px outset hsl(302, 59%, 95%);
     transition: 500ms;
-    z-index: 1;
     box-shadow: -4px 0 4px 0 hsl(302, 59%, 95%), 4px 0 4px hsl(302, 59%, 95%);
 }
 
 .job-box:hover{
     text-shadow: 0 0 16px white;
     border: 8px outset hsl(302, 59%, 75%);
-    z-index: 2;
 }
 
 /**Career Pages**/
